@@ -1,0 +1,25 @@
+<h3 mat-dialog-title>
+    Detail Produk
+</h3>
+<div mat-dialog-content>
+    <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-label>NAMA BARANG</mat-label>
+        <input matInput [(ngModel)]="data.title">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-label>KETERANGAN</mat-label>
+        <input matInput [(ngModel)]="data.author">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-label>JUMLAH BARANG</mat-label>
+        <input matInput [(ngModel)]="data.publisher">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-label>HARGA</mat-label>
+        <input matInput [(ngModel)]="data.year">
+    </mat-form-field>
+</div>
+<div mat-dialog-actions align="end">
+<button mat-button mat-dialog-close>Batal</button>
+<button mat-flat-button (click)="saveData()" [disabled]="loading">{{loading ? 'Menyimpan..':'Simpan'}}</button>
+</div>

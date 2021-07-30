@@ -1,0 +1,29 @@
+.example-container {
+  position: absolute;
+  top: 60px;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  color-adjust: black;
+}
+
+.example-sidenav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+}
+
+.sidenav-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  background: rgba(58, 58, 60, 0.433);
+  color: rgb(180, 28, 163)
+}
+
+.mat-toolbar {
+  background: rgb(49, 0, 128);
+  color: rgb(255, 255, 255)
+}
